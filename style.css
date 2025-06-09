@@ -1,0 +1,85 @@
+body {
+  background-color: hsl(13, 31%, 94%);
+  font-family: "Red Hat Text", sans-serif;
+}
+
+.container {
+  width: 1200px;
+  margin: auto;
+  margin-top: 60px;
+  display: flex;
+  align-items: start;
+  gap: 40px;
+}
+
+.list__container {
+  width: 67%;
+}
+.list__header {
+  font-size: 30px;
+  font-weight: 700;
+  color: hsl(14, 65%, 9%);
+  margin: 0;
+  margin-bottom: 20px;
+}
+.list__wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  gap: 7px;
+}
+
+.card {
+  position: relative;
+}
+.card__image {
+  width: 100%;
+}
+.card__button {
+  background-color: hsl(20, 50%, 98%);
+  font-family: "Red Hat Text", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  border: 1px solid hsl(12, 20%, 44%);
+  color: hsl(14, 65%, 9%);
+  padding: 10px 30px;
+  border-radius: 20px;
+  transition: color 0.3s, background-color 0.3s;
+}
+.card__button-container {
+  position: relative;
+  left: 17%;
+  top: -24px;
+  width: -moz-max-content;
+  width: max-content;
+}
+.card__button::before {
+  content: url(assets/images/icon-add-to-cart.svg);
+  position: relative;
+  top: 4px;
+  left: -4px;
+}
+.card__button:hover {
+  cursor: pointer;
+  color: hsl(20, 50%, 98%);
+  background-color: hsl(7, 20%, 60%);
+}
+.card__info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.card__category {
+  font-size: 16px;
+  font-weight: 400;
+  color: hsl(7, 20%, 60%);
+}
+.card__name {
+  font-size: 16px;
+  font-weight: 600;
+  color: hsl(14, 65%, 9%);
+}
+.card__price {
+  font-size: 16px;
+  font-weight: 600;
+  color: hsl(14, 86%, 42%);
+}/*# sourceMappingURL=style.css.map */
