@@ -22,13 +22,13 @@ body {
         font-weight: 700;
         color: hsl(14, 65%, 9%);
         margin: 0;
-        margin-bottom: 20px;
+        margin-bottom: 25px;
     }
 
     &__wrapper {
         display: grid;
         grid-template-columns: repeat(3, 33%);
-        gap: 7px;
+        gap: 15px;
     }
 }
 
