@@ -109,4 +109,18 @@ body {
   font-size: 16px;
   font-weight: 400;
   color: hsl(7, 20%, 60%);
+}
+
+.footer {
+  margin-top: 70px;
+  text-align: center;
+  color: hsl(12, 20%, 44%);
+}
+.footer__link {
+  color: hsl(14, 65%, 9%);
+  transition: color 0.3s;
+  text-decoration: none;
+}
+.footer__link:hover {
+  color: hsl(14, 86%, 42%);
 }/*# sourceMappingURL=style.css.map */

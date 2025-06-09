@@ -127,3 +127,19 @@ body {
         }
     }
 }
+
+.footer {
+    margin-top: 70px;
+    text-align: center;
+    color: hsl(12, 20%, 44%);
+
+    &__link {
+        color:hsl(14, 65%, 9%);
+        transition: color 0.3s;
+        text-decoration: none;
+
+        &:hover {
+            color:hsl(14, 86%, 42%);
+        }
+    }
+}
