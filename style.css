@@ -35,7 +35,25 @@ body {
   width: 100%;
   border-radius: 15px;
 }
-.card__button {
+.card__button-container {
+  position: relative;
+  left: 17%;
+  top: -24px;
+  width: -moz-max-content;
+  width: max-content;
+}
+.card__button-container.active {
+  display: none;
+  justify-content: space-between;
+  width: -moz-max-content;
+  width: max-content;
+  background-color: hsl(14, 86%, 42%);
+  padding: 10px;
+  gap: 40px;
+  border-radius: 20px;
+  align-items: center;
+}
+.card__button__add {
   background-color: hsl(20, 50%, 98%);
   font-family: "Red Hat Text", sans-serif;
   font-size: 16px;
@@ -46,23 +64,36 @@ body {
   border-radius: 20px;
   transition: color 0.3s, background-color 0.3s;
 }
-.card__button-container {
-  position: relative;
-  left: 17%;
-  top: -24px;
-  width: -moz-max-content;
-  width: max-content;
-}
-.card__button::before {
+.card__button__add::before {
   content: url(assets/images/icon-add-to-cart.svg);
   position: relative;
   top: 4px;
   left: -4px;
 }
-.card__button:hover {
+.card__button__add:hover {
   cursor: pointer;
   color: hsl(20, 50%, 98%);
   background-color: hsl(7, 20%, 60%);
+}
+.card__button-decrement {
+  background-color: hsl(14, 86%, 42%);
+  border: none;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: background-color 0.3s linear;
+}
+.card__button-decrement:hover {
+  background-color: hsl(14, 74%, 55%);
+}
+.card__button-count {
+  color: hsl(20, 50%, 98%);
+  font-family: "Red Hat Text", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
 }
 .card__info {
   display: flex;

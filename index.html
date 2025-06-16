@@ -16,11 +16,23 @@
 			<h1 class="list__header">Desserts</h1>
 
 			<div class="list__wrapper">
-				<div class="card">
+				<div class="card" data-name="Waffle with Berries" data-price="6,5" data-count="0">
 					<img class="card__image" src="assets/images/image-waffle-desktop.jpg">
 
-					<div class="card__button-container">
-						<button class="card__button">Add to Cart</button>
+					<div data-button-name="waffle" class="card__button-container add button__add">
+						<button class="card__button__add">Add to Cart</button>
+					</div>
+
+					<div data-button-name="waffle" class="card__button-container active button__active">
+						<button class="card__button-decrement decrement">
+							<img src="assets/images/icon-decrement-quantity.svg" alt="">
+						</button>
+
+						<span class="card__button-count">1</span>
+
+						<button class="card__button-decrement increment">
+							<img src="assets/images/icon-increment-quantity.svg" alt="">
+						</button>
 					</div>
 
 					<div class="card__info">
@@ -33,8 +45,8 @@
 				<div class="card">
 					<img class="card__image" src="assets/images/image-creme-brulee-desktop.jpg">
 
-					<div class="card__button-container">
-						<button class="card__button">Add to Cart</button>
+					<div class="card__button-container add button__add">
+						<button class="card__button__add">Add to Cart</button>
 					</div>
 
 					<div class="card__info">
@@ -47,8 +59,8 @@
 				<div class="card">
 					<img class="card__image" src="assets/images/image-macaron-desktop.jpg">
 
-					<div class="card__button-container">
-						<button class="card__button">Add to Cart</button>
+					<div class="card__button-container add button__add">
+						<button class="card__button__add">Add to Cart</button>
 					</div>
 
 					<div class="card__info">
@@ -61,8 +73,8 @@
 				<div class="card">
 					<img class="card__image" src="assets/images/image-tiramisu-desktop.jpg">
 
-					<div class="card__button-container">
-						<button class="card__button">Add to Cart</button>
+					<div class="card__button-container add button__add">
+						<button class="card__button__add">Add to Cart</button>
 					</div>
 
 					<div class="card__info">
@@ -75,8 +87,8 @@
 				<div class="card">
 					<img class="card__image" src="assets/images/image-baklava-desktop.jpg">
 
-					<div class="card__button-container">
-						<button class="card__button">Add to Cart</button>
+					<div class="card__button-container add button__add">
+						<button class="card__button__add">Add to Cart</button>
 					</div>
 
 					<div class="card__info">
@@ -89,8 +101,8 @@
 				<div class="card">
 					<img class="card__image" src="assets/images/image-meringue-desktop.jpg">
 
-					<div class="card__button-container">
-						<button class="card__button">Add to Cart</button>
+					<div class="card__button-container add button__add">
+						<button class="card__button__add">Add to Cart</button>
 					</div>
 
 					<div class="card__info">
@@ -103,8 +115,8 @@
 				<div class="card">
 					<img class="card__image" src="assets/images/image-cake-desktop.jpg">
 
-					<div class="card__button-container">
-						<button class="card__button">Add to Cart</button>
+					<div class="card__button-container add button__add">
+						<button class="card__button__add">Add to Cart</button>
 					</div>
 
 					<div class="card__info">
@@ -117,8 +129,8 @@
 				<div class="card">
 					<img class="card__image" src="assets/images/image-brownie-desktop.jpg">
 
-					<div class="card__button-container">
-						<button class="card__button">Add to Cart</button>
+					<div class="card__button-container add button__add">
+						<button class="card__button__add">Add to Cart</button>
 					</div>
 
 					<div class="card__info">
@@ -131,8 +143,8 @@
 				<div class="card">
 					<img class="card__image" src="assets/images/image-panna-cotta-desktop.jpg">
 
-					<div class="card__button-container">
-						<button class="card__button">Add to Cart</button>
+					<div class="card__button-container add button__add">
+						<button class="card__button__add">Add to Cart</button>
 					</div>
 
 					<div class="card__info">
@@ -161,4 +173,5 @@
 		Coded by <a class="footer__link" href="https://github.com/klimerri/desserts">klimerri</a>.
 	</footer>
 </body>
+<script src="script.js"></script>
 </html>
